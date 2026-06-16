@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkiScan — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for ParkiScan, an educational AI demo on facial motion analysis." />
+  <style>
+    :root {
+      --bg: #0d1b2a;
+      --card: #14253a;
+      --text: #e8eef5;
+      --muted: #a8b8c8;
+      --accent: #00c896;
+      --link: #7fcbe0;
+      --warning-bg: rgba(255, 99, 99, 0.12);
+      --warning-border: rgba(255, 99, 99, 0.45);
+      --warning-text: #ffd0d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      letter-spacing: -0.5px;
+    }
+    h1 .accent { color: var(--accent); }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+    h2 {
+      color: var(--text);
+      font-size: 22px;
+      margin: 40px 0 12px;
+      letter-spacing: -0.2px;
+    }
+    h3 {
+      color: var(--accent);
+      font-size: 16px;
+      margin: 24px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 15.5px;
+    }
+    ul {
+      padding-left: 22px;
+    }
+    ul li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: rgba(127, 203, 224, 0.5);
+    }
+    a:hover { text-decoration-color: var(--link); }
+    .notice {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 16px 0 24px;
+      color: var(--warning-text);
+      font-size: 14.5px;
+      font-weight: 500;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 18px 0;
+    }
+    strong { color: var(--text); }
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      margin: 40px 0;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    @media (max-width: 600px) {
+      .wrapper { padding: 32px 18px 60px; }
+      h1 { font-size: 26px; }
+      h2 { font-size: 19px; }
+      p, li { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Parki<span class="accent">Scan</span> — Privacy Policy</h1>
+      <p class="meta"><strong>Effective Date:</strong> June 15, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> June 15, 2026</p>
+    </header>
+
+    <p>ParkiScan ("we," "our," or "the app") is an educational student research project. This Privacy Policy explains what data the app collects, how it is used, how it is shared, and how long it is retained. By using ParkiScan, you agree to the practices described below.</p>
+
+    <div class="notice">
+      ParkiScan is <strong>not a medical device</strong> and is <strong>not intended to diagnose, treat, cure, or prevent any disease</strong>. All outputs are educational demonstrations only.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>1.1 Face Data (Video and Facial Landmarks)</h3>
+    <p>When you choose to start a demo scan, you record (or select from your photo library) a short video of your face. The video is <strong>temporarily transmitted</strong> to our analysis server for processing. The server then derives <strong>468 facial landmark coordinates</strong> per frame using on-server computer vision software.</p>
+    <p><strong>Face data includes:</strong></p>
+    <ul>
+      <li>The video file you record or select (containing images of your face)</li>
+      <li>Facial landmark coordinates extracted from that video on our server</li>
+    </ul>
+    <p><strong>We do not collect:</strong> your name, email, phone number, account, biometric template, government ID, location, contacts, photos other than the video you submit, or any other personal information.</p>
+
+    <h3>1.2 Device Information</h3>
+    <p>We do not collect device identifiers, IP addresses, advertising IDs, or analytics about your usage. The app does not include third-party analytics, advertising SDKs, or crash reporting services.</p>
+
+    <h3>1.3 Data Stored Locally on Your Device</h3>
+    <p>If you choose to save a demo output, the model's numerical output (e.g., 0.786) and a feature breakdown are stored <strong>only on your device</strong> using the operating system's standard preferences storage (<code>SharedPreferences</code> on Android, <code>NSUserDefaults</code> on iOS). This local data never leaves your device and is removed when you uninstall the app or clear the app's data.</p>
+
+    <h2>2. Why We Collect Face Data</h2>
+    <p>We collect face data <strong>solely</strong> to:</p>
+    <ul>
+      <li>Run the educational AI demonstration that you explicitly request when you tap "Agree &amp; Send" before each scan.</li>
+      <li>Return a model output to your device so you can see how the AI model behaves.</li>
+    </ul>
+    <p>We do <strong>not</strong> use face data for:</p>
+    <ul>
+      <li>Identification or authentication</li>
+      <li>Training, retraining, fine-tuning, or improving any AI/ML model</li>
+      <li>Advertising, marketing, profiling, or analytics</li>
+      <li>Building a face recognition database</li>
+      <li>Any commercial purpose</li>
+    </ul>
+
+    <h2>3. How Long We Keep Face Data</h2>
+    <div class="card">
+      <p style="margin:0"><strong>We do not retain face data.</strong></p>
+    </div>
+    <ul>
+      <li>The video you submit is held only in memory long enough to extract facial landmark coordinates and run the model (typically a few seconds).</li>
+      <li>The video file and the extracted landmarks are <strong>discarded immediately</strong> after the model returns a result. They are not written to disk, not backed up, and not archived.</li>
+      <li>Because face data is processed in-memory and discarded immediately, the retention period is <strong>transient (seconds)</strong>, never persistent.</li>
+    </ul>
+    <p>We chose this retention period because it is the <strong>minimum duration technically necessary</strong> to produce the educational demo output, and zero retention afterward best protects user privacy.</p>
+
+    <h2>4. Who We Share Face Data With</h2>
+    <div class="card">
+      <p style="margin:0"><strong>We do not share face data with any third party.</strong></p>
+    </div>
+    <ul>
+      <li>The video is transmitted only to a server we ourselves operate on <strong>Amazon Web Services Elastic Compute Cloud (AWS EC2)</strong>, in the <strong>US East (Ohio)</strong> region.</li>
+      <li>AWS acts solely as our <strong>infrastructure host (a sub-processor)</strong>. AWS does not access the contents of the video, does not run the AI model, and does not store the video. The video exists in server memory only and is discarded after processing. AWS's privacy practices are described at <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener">https://aws.amazon.com/privacy/</a>.</li>
+      <li>We do <strong>not</strong> use any third-party AI service (e.g., OpenAI, Google AI, Microsoft AI, Anthropic, Hugging Face, Replicate, or any external machine-learning API). All AI processing happens on our own server using open-source libraries (MediaPipe, scikit-learn, OpenCV) running locally on that server.</li>
+      <li>We do <strong>not</strong> sell, rent, or otherwise disclose face data to advertisers, data brokers, or any other third party.</li>
+    </ul>
+
+    <h2>5. Legal Basis</h2>
+    <p>The legal basis for processing face data is <strong>your explicit, informed consent</strong>, which you give each time you tap "Agree &amp; Send" in the in-app consent dialog. You may withdraw consent at any time by canceling the upload, declining the consent dialog, or uninstalling the app.</p>
+
+    <h2>6. Security</h2>
+    <p>Video data is transmitted over the public internet to our server. The server processes the video in memory and discards it immediately. Because we do not retain face data, there is no stored face data that could be breached.</p>
+    <p>We do not, however, claim that any transmission over the internet is completely secure. You assume the risk inherent to any internet-based service when you submit a video.</p>
+
+    <h2>7. Children</h2>
+    <p>ParkiScan is intended for educational use by individuals <strong>13 years of age or older</strong>. We do not knowingly collect data from children under 13. If you believe a child under 13 has used the app, please contact us so we can confirm no data was retained (since the app does not retain face data, no deletion is technically necessary, but we will respond to your inquiry).</p>
+
+    <h2>8. Your Rights</h2>
+    <p>Because the app does not store identifiable data about you (no account, no IP logging, no analytics, and no persistent face data), there is generally no personal data for us to access, correct, or delete. Locally saved demo outputs are under your control on your device: you can delete them from the app's history screen or by uninstalling the app.</p>
+    <p>If you reside in a jurisdiction with applicable privacy rights (such as the EU/UK GDPR, California CCPA/CPRA, or similar regimes), and you believe we hold personal data about you, you may contact us at the address below to exercise your rights to access, correction, deletion, restriction, portability, or objection.</p>
+
+    <h2>9. International Users</h2>
+    <p>Our analysis server is located in the United States (AWS US East / Ohio). If you use the app from outside the United States, your video is transmitted to and processed in the United States. By using the app, you consent to this transfer.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If we materially change this Privacy Policy, we will update the "Last Updated" date above and post the new policy at the same URL where you found this one. Material changes may also be announced through an in-app notice.</p>
+
+    <h2>11. Contact</h2>
+    <p>Questions about this Privacy Policy or our data practices may be sent to:</p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:marisabelchang@gmail.com">marisabelchang@gmail.com</a><br />
+      <strong>Project:</strong> ParkiScan — Educational AI Demo
+    </p>
+
+    <footer>
+      ParkiScan is an educational student research project. It is not a commercial product, not a medical device, and not FDA-approved.
+    </footer>
+  </div>
+</body>
+</html>
